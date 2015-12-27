@@ -1,0 +1,806 @@
+<script name="Áğåäîãåíåğàòîğ" version="1" id="{f0a782e4-78ce-4d77-aaed-ff168a4a43ab}">
+	<libraries>
+		<library name="Std" file="AnandamideAPI"/>
+	</libraries>
+	<logics>
+		<logic name="Main" kind="">
+			<variables/>
+			<nodes>
+				<node type="Message" library="Std" pos_x="168" pos_y="-160" index="0">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Çàõàğ"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1824" pos_y="-352" index="1">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ñäåëàë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1816" pos_y="-248" index="2">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="çàåáåíèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1856" pos_y="168" index="3">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ïîäòàùèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1856" pos_y="56" index="4">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="çàïèëèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1856" pos_y="-40" index="5">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="íàõåğà÷èë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1840" pos_y="-152" index="6">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ñâàğãàíèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2488" pos_y="-432" index="7">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="õîğîøóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2480" pos_y="-336" index="8">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="îõóèòåëüíóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2512" pos_y="-160" index="9">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="äåğüìîâóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2504" pos_y="-40" index="10">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ãîâíî-"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2504" pos_y="160" index="11">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ñóïåğñêóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2488" pos_y="240" index="12">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="êğàñèâåéøóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2472" pos_y="360" index="13">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ïğèêîëüíóş"/>
+					</inputs>
+				</node>
+				<node type="RandomSwitch" library="Std" pos_x="2168" pos_y="-80" index="14">
+					<events>
+						<event name="out0">
+							<action node="7">in</action>
+						</event>
+						<event name="out1">
+							<action node="8">in</action>
+						</event>
+						<event name="out2">
+							<action node="16">in</action>
+						</event>
+						<event name="out3">
+							<action node="9">in</action>
+						</event>
+						<event name="out4">
+							<action node="10">in</action>
+						</event>
+						<event name="out5">
+							<action node="17">in</action>
+						</event>
+						<event name="out6">
+							<action node="11">in</action>
+						</event>
+						<event name="out7">
+							<action node="12">in</action>
+						</event>
+						<event name="out8">
+							<action node="13">in</action>
+						</event>
+						<event name="out9">
+							<action node="15">in</action>
+						</event>
+						<event name="out10">
+							<action node="63">in</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">11</parameter>
+					</parameters>
+				</node>
+				<node type="Message" library="Std" pos_x="2464" pos_y="472" index="15">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="çàìå÷àòåëüíóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2504" pos_y="-248" index="16">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="êğàñèâóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2512" pos_y="72" index="17">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="õóåâóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="168" pos_y="-96" index="18">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Íèêîëàé"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="168" pos_y="-24" index="19">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Àëüáåğò"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="160" pos_y="56" index="20">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Äàíèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="152" pos_y="136" index="21">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Ë¸õà"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1832" pos_y="272" index="22">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ñëàäèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="632" pos_y="-376" index="23">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Àíàòîëüåâè÷"/>
+					</inputs>
+				</node>
+				<node type="RandomSwitch" library="Std" pos_x="352" pos_y="-384" index="24">
+					<events>
+						<event name="out0">
+							<action node="23">in</action>
+						</event>
+						<event name="out1">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">2</parameter>
+					</parameters>
+				</node>
+				<node type="Message" library="Std" pos_x="1096" pos_y="-600" index="25">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ñëó÷àéíî"/>
+					</inputs>
+				</node>
+				<node type="RandomSwitch" library="Std" pos_x="1424" pos_y="-104" index="26">
+					<events>
+						<event name="out0">
+							<action node="1">in</action>
+						</event>
+						<event name="out1">
+							<action node="2">in</action>
+						</event>
+						<event name="out2">
+							<action node="6">in</action>
+						</event>
+						<event name="out3">
+							<action node="5">in</action>
+						</event>
+						<event name="out4">
+							<action node="4">in</action>
+						</event>
+						<event name="out5">
+							<action node="3">in</action>
+						</event>
+						<event name="out6">
+							<action node="22">in</action>
+						</event>
+						<event name="out7">
+							<action node="62">in</action>
+						</event>
+						<event name="out8">
+							<action node="64">in</action>
+						</event>
+						<event name="out9">
+							<action node="65">in</action>
+						</event>
+						<event name="out10">
+							<action node="66">in</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">11</parameter>
+					</parameters>
+				</node>
+				<node type="Message" library="Std" pos_x="1080" pos_y="-280" index="27">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ãğàíäèîçíî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1104" pos_y="-408" index="28">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="íå÷àÿííî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1120" pos_y="-512" index="29">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ãåíèàëüíî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1064" pos_y="-112" index="30">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ïèçäàòî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1072" pos_y="-16" index="31">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="õóåâî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1072" pos_y="64" index="32">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="íå î÷åíü"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1072" pos_y="160" index="33">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="õîğîøî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1064" pos_y="240" index="34">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="àõóèòåëüíî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1064" pos_y="328" index="35">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="çàåáèñü"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1088" pos_y="-680" index="36">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="âíåçàïíî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="-40" index="37">
+					<inputs>
+						<input name="text" value="øòóêó"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="-120" index="38">
+					<inputs>
+						<input name="text" value="ïğîãğàììó"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="40" index="39">
+					<inputs>
+						<input name="text" value="åäó"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="120" index="40">
+					<inputs>
+						<input name="text" value="õóéíş"/>
+					</inputs>
+				</node>
+				<node type="RandomSwitch" library="Std" pos_x="792" pos_y="-168" index="41">
+					<events>
+						<event name="out0">
+							<action node="36">in</action>
+						</event>
+						<event name="out1">
+							<action node="25">in</action>
+						</event>
+						<event name="out2">
+							<action node="29">in</action>
+						</event>
+						<event name="out3">
+							<action node="28">in</action>
+						</event>
+						<event name="out4">
+							<action node="27">in</action>
+						</event>
+						<event name="out5">
+							<action node="44">in</action>
+						</event>
+						<event name="out6">
+							<action node="30">in</action>
+						</event>
+						<event name="out7">
+							<action node="31">in</action>
+						</event>
+						<event name="out8">
+							<action node="32">in</action>
+						</event>
+						<event name="out9">
+							<action node="33">in</action>
+						</event>
+						<event name="out10">
+							<action node="34">in</action>
+						</event>
+						<event name="out11">
+							<action node="35">in</action>
+						</event>
+						<event name="out12">
+							<action node="43">in</action>
+						</event>
+						<event name="out13">
+							<action node="42">in</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">14</parameter>
+					</parameters>
+				</node>
+				<node type="Message" library="Std" pos_x="1064" pos_y="528" index="42">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ïëîõî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1056" pos_y="440" index="43">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="áûñòğî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1072" pos_y="-200" index="44">
+					<events>
+						<event name="out">
+							<action node="26">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="óæàñíî"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="216" index="45">
+					<inputs>
+						<input name="text" value="áàéäó"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="296" index="46">
+					<inputs>
+						<input name="text" value="ôóíêöèş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="376" index="47">
+					<inputs>
+						<input name="text" value="áèáëèîòåêó"/>
+					</inputs>
+				</node>
+				<node type="RandomSwitch" library="Std" pos_x="2912" pos_y="-64" index="48">
+					<events>
+						<event name="out0">
+							<action node="49">in</action>
+						</event>
+						<event name="out1">
+							<action node="38">in</action>
+						</event>
+						<event name="out2">
+							<action node="37">in</action>
+						</event>
+						<event name="out3">
+							<action node="39">in</action>
+						</event>
+						<event name="out4">
+							<action node="40">in</action>
+						</event>
+						<event name="out5">
+							<action node="45">in</action>
+						</event>
+						<event name="out6">
+							<action node="46">in</action>
+						</event>
+						<event name="out7">
+							<action node="47">in</action>
+						</event>
+						<event name="out8">
+							<action node="67">in</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">9</parameter>
+					</parameters>
+				</node>
+				<node type="Message" library="Std" pos_x="3272" pos_y="-200" index="49">
+					<inputs>
+						<input name="text" value="ôè÷ó"/>
+					</inputs>
+				</node>
+				<node type="Action" instance="entry" pos_x="-840" pos_y="-272" index="50">
+					<events>
+						<event name="out">
+							<action node="58">in</action>
+						</event>
+					</events>
+				</node>
+				<node type="Message" library="Std" pos_x="152" pos_y="224" index="51">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Òàéëàí"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="-440" pos_y="-192" index="52">
+					<events>
+						<event name="out">
+							<action node="59">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Õğàáğûé"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="-440" pos_y="0" index="53">
+					<events>
+						<event name="out">
+							<action node="59">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Îòâàæíûé"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="-464" pos_y="-320" index="54">
+					<events>
+						<event name="out">
+							<action node="59">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Íåèñòîâûé"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="-448" pos_y="-88" index="55">
+					<events>
+						<event name="out">
+							<action node="59">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Âåëè÷åñòâåííûé"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="-440" pos_y="88" index="56">
+					<events>
+						<event name="out">
+							<action node="59">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Óìíûé"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="-432" pos_y="184" index="57">
+					<events>
+						<event name="out">
+							<action node="59">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Ãëóïûé"/>
+					</inputs>
+				</node>
+				<node type="RandomSwitch" library="Std" pos_x="-688" pos_y="-160" index="58">
+					<events>
+						<event name="out0">
+							<action node="54">in</action>
+						</event>
+						<event name="out1">
+							<action node="52">in</action>
+						</event>
+						<event name="out2">
+							<action node="55">in</action>
+						</event>
+						<event name="out3">
+							<action node="53">in</action>
+						</event>
+						<event name="out4">
+							<action node="56">in</action>
+						</event>
+						<event name="out5">
+							<action node="57">in</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">6</parameter>
+					</parameters>
+				</node>
+				<node type="RandomSwitch" library="Std" pos_x="-176" pos_y="-152" index="59">
+					<events>
+						<event name="out0">
+							<action node="60">in</action>
+						</event>
+						<event name="out1">
+							<action node="61">in</action>
+						</event>
+						<event name="out2">
+							<action node="0">in</action>
+						</event>
+						<event name="out3">
+							<action node="18">in</action>
+						</event>
+						<event name="out4">
+							<action node="19">in</action>
+						</event>
+						<event name="out5">
+							<action node="20">in</action>
+						</event>
+						<event name="out6">
+							<action node="21">in</action>
+						</event>
+						<event name="out7">
+							<action node="51">in</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">8</parameter>
+					</parameters>
+				</node>
+				<node type="Message" library="Std" pos_x="168" pos_y="-336" index="60">
+					<events>
+						<event name="out">
+							<action node="24">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Ñåğãåé"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="168" pos_y="-248" index="61">
+					<events>
+						<event name="out">
+							<action node="41">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Âàíüêà"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1840" pos_y="352" index="62">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="ñëîìàë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="2472" pos_y="536" index="63">
+					<events>
+						<event name="out">
+							<action node="48">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="çàåáàòåëüñêóş"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1832" pos_y="448" index="64">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="âûïèëèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1832" pos_y="528" index="65">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="îòğåôàêòîğèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="1832" pos_y="608" index="66">
+					<events>
+						<event name="out">
+							<action node="14">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="óäàëèë"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="3280" pos_y="440" index="67">
+					<inputs>
+						<input name="text" value="áàáó"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+	</logics>
+</script>

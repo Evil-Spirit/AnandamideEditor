@@ -1,0 +1,199 @@
+<script name="EasyMath" version="1" id="{871d388b-0829-411b-afa5-384a50574d8c}">
+	<libraries>
+		<library name="Std" file="AnandamideAPI"/>
+	</libraries>
+	<logics>
+		<logic name="Main" kind="">
+			<variables/>
+			<nodes>
+				<node type="Action" instance="entry" pos_x="-240" pos_y="-160" index="0"/>
+				<node type="Add" pos_x="0" pos_y="-80" index="1" library="#script">
+					<inputs>
+						<input name="b" value="6"/>
+						<input name="a" value="5"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+		<logic name="Add" kind="">
+			<variables/>
+			<nodes>
+				<node type="Input" instance="b" pos_x="-320" pos_y="-48" index="0">
+					<parameters>
+						<parameter name="type">1004</parameter>
+						<parameter name="default">6</parameter>
+					</parameters>
+				</node>
+				<node type="Output" instance="a+b" pos_x="336" pos_y="-168" index="1">
+					<parameters>
+						<parameter name="type">1002</parameter>
+					</parameters>
+					<inputs>
+						<input name="value" source_node="2" source_output="a-b"/>
+					</inputs>
+				</node>
+				<node type="Sub" pos_x="104" pos_y="-160" index="2" library="#script">
+					<inputs>
+						<input name="a" source_node="4" source_output="value"/>
+						<input name="b" source_node="3" source_output="a-b"/>
+					</inputs>
+				</node>
+				<node type="Sub" pos_x="-64" pos_y="-56" index="3" library="#script">
+					<inputs>
+						<input name="a" value="0"/>
+						<input name="b" source_node="0" source_output="value"/>
+					</inputs>
+				</node>
+				<node type="Input" instance="a" pos_x="-304" pos_y="-224" index="4">
+					<parameters>
+						<parameter name="type">1004</parameter>
+						<parameter name="default">5</parameter>
+					</parameters>
+				</node>
+			</nodes>
+		</logic>
+		<logic name="Mul" kind="">
+			<variables>
+				<variable name="summ" type_id="1002"/>
+			</variables>
+			<nodes>
+				<node type="SetVariable" instance="summ" pos_x="168" pos_y="-136" index="0">
+					<events>
+						<event name="out">
+							<action node="6">start</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="value" value="0"/>
+					</inputs>
+				</node>
+				<node type="Add" pos_x="744" pos_y="16" index="1" library="#script">
+					<inputs>
+						<input name="b" source_node="4" source_output="value"/>
+						<input name="a" source_node="3" source_output="value"/>
+					</inputs>
+				</node>
+				<node type="Input" instance="a" pos_x="72" pos_y="8" index="2">
+					<parameters>
+						<parameter name="type">1002</parameter>
+						<parameter name="default">0</parameter>
+					</parameters>
+				</node>
+				<node type="GetVariable" instance="summ" pos_x="472" pos_y="0" index="3"/>
+				<node type="Input" instance="b" pos_x="216" pos_y="168" index="4">
+					<parameters>
+						<parameter name="type">1002</parameter>
+						<parameter name="default">0</parameter>
+					</parameters>
+				</node>
+				<node type="SetVariable" instance="summ" pos_x="768" pos_y="-104" index="5">
+					<inputs>
+						<input name="value" source_node="1" source_output="a+b"/>
+					</inputs>
+				</node>
+				<node type="For" library="Std" pos_x="432" pos_y="-152" index="6">
+					<events>
+						<event name="end">
+							<action node="7">set</action>
+						</event>
+						<event name="loop">
+							<action node="5">set</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="from" value="0"/>
+						<input name="count" source_node="2" source_output="value"/>
+					</inputs>
+				</node>
+				<node type="Output" instance="a*b" pos_x="392" pos_y="-360" index="7">
+					<events>
+						<event name="on get">
+							<action node="0">set</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="type">1002</parameter>
+					</parameters>
+					<inputs>
+						<input name="value" source_node="8" source_output="value"/>
+					</inputs>
+				</node>
+				<node type="GetVariable" instance="summ" pos_x="160" pos_y="-312" index="8"/>
+			</nodes>
+		</logic>
+		<logic name="AddMul" kind="">
+			<variables/>
+			<nodes>
+				<node type="Input" instance="a" pos_x="-512" pos_y="-264" index="0">
+					<parameters>
+						<parameter name="type">1002</parameter>
+						<parameter name="default">0</parameter>
+					</parameters>
+				</node>
+				<node type="Input" instance="b" pos_x="-520" pos_y="-32" index="1">
+					<parameters>
+						<parameter name="type">1002</parameter>
+						<parameter name="default">0</parameter>
+					</parameters>
+				</node>
+				<node type="Add" pos_x="-256" pos_y="-200" index="2" library="#script">
+					<inputs>
+						<input name="b" source_node="1" source_output="value"/>
+						<input name="a" source_node="0" source_output="value"/>
+					</inputs>
+				</node>
+				<node type="Input" instance="k" pos_x="-448" pos_y="120" index="3">
+					<parameters>
+						<parameter name="type">1002</parameter>
+						<parameter name="default">0</parameter>
+					</parameters>
+				</node>
+				<node type="Mul" pos_x="0" pos_y="-136" index="4" library="#script">
+					<inputs>
+						<input name="a" source_node="2" source_output="a+b"/>
+						<input name="b" source_node="3" source_output="value"/>
+					</inputs>
+				</node>
+				<node type="Output" instance="(a+b)*k" pos_x="232" pos_y="-208" index="5">
+					<parameters>
+						<parameter name="type">1002</parameter>
+					</parameters>
+					<inputs>
+						<input name="value" source_node="4" source_output="a*b"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+		<logic name="Sub" kind="">
+			<variables/>
+			<nodes>
+				<node type="IntSub" library="Std" pos_x="16" pos_y="-120" index="0">
+					<inputs>
+						<input name="a" source_node="1" source_output="value"/>
+						<input name="b" source_node="2" source_output="value"/>
+					</inputs>
+				</node>
+				<node type="Input" instance="a" pos_x="-240" pos_y="-160" index="1">
+					<parameters>
+						<parameter name="type">1002</parameter>
+						<parameter name="default">0</parameter>
+					</parameters>
+				</node>
+				<node type="Input" instance="b" pos_x="-240" pos_y="-104" index="2">
+					<parameters>
+						<parameter name="type">1002</parameter>
+						<parameter name="default">0</parameter>
+					</parameters>
+				</node>
+				<node type="Output" instance="a-b" pos_x="272" pos_y="-144" index="3">
+					<parameters>
+						<parameter name="type">1002</parameter>
+					</parameters>
+					<inputs>
+						<input name="value" source_node="0" source_output="a - b"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+	</logics>
+</script>

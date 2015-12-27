@@ -1,0 +1,176 @@
+<script name="TestEasyMath" version="1" id="{e6d1fa5b-f191-468b-b1dd-091bb73bf5ed}">
+	<libraries>
+		<library name="Std" file="AnandamideAPI"/>
+		<library name="EasyMath" file="easy_math.and"/>
+	</libraries>
+	<logics>
+		<logic name="Main" kind="">
+			<variables/>
+			<nodes>
+				<node type="Action" instance="entry" pos_x="-240" pos_y="-160" index="0">
+					<events>
+						<event name="out">
+							<action node="1">in</action>
+						</event>
+					</events>
+				</node>
+				<node type="Sequence" library="Std" pos_x="-16" pos_y="-104" index="1">
+					<events>
+						<event name="out0">
+							<action node="2">test</action>
+						</event>
+						<event name="out1">
+							<action node="3">test</action>
+						</event>
+						<event name="out3">
+							<action node="4">test</action>
+						</event>
+						<event name="out4">
+							<action node="5">test</action>
+						</event>
+					</events>
+					<parameters>
+						<parameter name="outs_count">5</parameter>
+					</parameters>
+				</node>
+				<node type="TestAddMul" pos_x="224" pos_y="-168" index="2" library="#script"/>
+				<node type="TestAdd" pos_x="224" pos_y="-96" index="3" library="#script"/>
+				<node type="TestMul" pos_x="224" pos_y="-32" index="4" library="#script"/>
+				<node type="TestSub" pos_x="224" pos_y="48" index="5" library="#script"/>
+			</nodes>
+		</logic>
+		<logic name="TestAddMul" kind="">
+			<variables/>
+			<nodes>
+				<node type="AddMul" library="EasyMath" pos_x="248" pos_y="-40" index="0">
+					<inputs>
+						<input name="a" value="3"/>
+						<input name="b" value="4"/>
+						<input name="k" value="5"/>
+					</inputs>
+				</node>
+				<node type="Action" instance="test" pos_x="-240" pos_y="-160" index="1">
+					<events>
+						<event name="out">
+							<action node="2">in</action>
+						</event>
+					</events>
+				</node>
+				<node type="Message" library="Std" pos_x="64" pos_y="-160" index="2">
+					<events>
+						<event name="out">
+							<action node="3">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Testing AddMul must be 35"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="384" pos_y="-152" index="3">
+					<inputs>
+						<input name="text" source_node="0" source_output="(a+b)*k"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+		<logic name="TestAdd" kind="">
+			<variables/>
+			<nodes>
+				<node type="Action" instance="test" pos_x="-240" pos_y="-160" index="0">
+					<events>
+						<event name="out">
+							<action node="2">in</action>
+						</event>
+					</events>
+				</node>
+				<node type="Add" library="EasyMath" pos_x="-136" pos_y="-16" index="1">
+					<inputs>
+						<input name="b" value="88"/>
+						<input name="a" value="12"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="32" pos_y="-128" index="2">
+					<events>
+						<event name="out">
+							<action node="3">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Testing Add must be 100"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="256" pos_y="-128" index="3">
+					<inputs>
+						<input name="text" source_node="1" source_output="a+b"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+		<logic name="TestMul" kind="">
+			<variables/>
+			<nodes>
+				<node type="Action" instance="test" pos_x="-240" pos_y="-160" index="0">
+					<events>
+						<event name="out">
+							<action node="1">in</action>
+						</event>
+					</events>
+				</node>
+				<node type="Message" library="Std" pos_x="104" pos_y="-160" index="1">
+					<events>
+						<event name="out">
+							<action node="2">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Testing Mul must be 222"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="432" pos_y="-160" index="2">
+					<inputs>
+						<input name="text" source_node="3" source_output="a*b"/>
+					</inputs>
+				</node>
+				<node type="Mul" library="EasyMath" pos_x="-24" pos_y="8" index="3">
+					<inputs>
+						<input name="a" value="111"/>
+						<input name="b" value="2"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+		<logic name="TestSub" kind="">
+			<variables/>
+			<nodes>
+				<node type="Action" instance="test" pos_x="-240" pos_y="-160" index="0">
+					<events>
+						<event name="out">
+							<action node="1">in</action>
+						</event>
+					</events>
+				</node>
+				<node type="Message" library="Std" pos_x="48" pos_y="-152" index="1">
+					<events>
+						<event name="out">
+							<action node="2">in</action>
+						</event>
+					</events>
+					<inputs>
+						<input name="text" value="Testing Sub must be 999"/>
+					</inputs>
+				</node>
+				<node type="Message" library="Std" pos_x="352" pos_y="-104" index="2">
+					<inputs>
+						<input name="text" source_node="3" source_output="a-b"/>
+					</inputs>
+				</node>
+				<node type="Sub" library="EasyMath" pos_x="32" pos_y="16" index="3">
+					<inputs>
+						<input name="a" value="1002"/>
+						<input name="b" value="3"/>
+					</inputs>
+				</node>
+			</nodes>
+		</logic>
+	</logics>
+</script>
