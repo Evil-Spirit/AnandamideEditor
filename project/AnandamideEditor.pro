@@ -15,7 +15,7 @@ INCLUDEPATH += ../depend/AnandamideAPI/include
 INCLUDEPATH += ../depend/AnandamideAPI/src/Common
 INCLUDEPATH += ../include
 
-ANANDAMIDE_API_BIN = $$shell_path("../depend/AnandamideAPI/bin/*.*")
+ANANDAMIDE_API_BIN = $$shell_path("../depend/AnandamideAPI/bin/*")
 
 LIBS += -L"../depend/AnandamideAPI/lib"
 
