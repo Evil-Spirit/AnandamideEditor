@@ -15,7 +15,7 @@ INCLUDEPATH += ../depend/AnandamideAPI/include
 INCLUDEPATH += ../depend/AnandamideAPI/src/Common
 INCLUDEPATH += ../include
 
-ANANDAMIDE_API_BIN = "../depend/AnandamideAPI/bin/*.*"
+ANANDAMIDE_API_BIN = $$shell_path("../depend/AnandamideAPI/bin/*.*")
 
 LIBS += -L"../depend/AnandamideAPI/lib"
 
@@ -36,7 +36,7 @@ CONFIG(debug, debug|release) {
 	#QMAKE_CXXFLAGS += /Ot /Oy- /GL /MP
 }
 
-QMAKE_POST_LINK += $$QMAKE_COPY $${ANANDAMIDE_API_BIN} "../bin/*.*"
+QMAKE_POST_LINK += $$QMAKE_COPY $${ANANDAMIDE_API_BIN} $$shell_path("../bin/*.*")
 
 FORMS += \
     ../data/MainWindow.ui \
