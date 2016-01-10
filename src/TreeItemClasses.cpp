@@ -25,7 +25,7 @@
 //
 //------------------------------------------------------------------------------
 
-#include "treeitemclasses.h"
+#include "TreeItemClasses.h"
 #include "MainWindow.h"
 
 #include "RuntimeWindow.h"

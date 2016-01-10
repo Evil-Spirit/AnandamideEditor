@@ -25,8 +25,8 @@
 //
 //------------------------------------------------------------------------------
 
-#include "setlogickinddialog.h"
-#include "ui_setlogickinddialog.h"
+#include "SetLogicKindDialog.h"
+#include "ui_SetLogicKindDialog.h"
 
 
 SetLogicKindDialog::SetLogicKindDialog(TreeItemScript *itemScript, QWidget *parent) :

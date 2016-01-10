@@ -56,7 +56,7 @@
 #include "XmlSettings.h"
 #include "Timer.h"
 
-#include "setlogickinddialog.h"
+#include "SetLogicKindDialog.h"
 #include "AnandamideStdLib.h"
 #include "Renderer.h"
 #include "AnandamideViewport.h"
@@ -754,11 +754,11 @@ void MainWindow::runScript()
 		script->compile();
 		qDebug("Script compiled.");
 		qDebug("Script start.");
-		Timer timer;
-		timer.start();
+		//Timer timer;
+		//timer.start();
 		script->run();
-		double time = timer.elapsed() * 1000.0;
-		qDebug()<<"Script end ("<<QString::number(time)<<")";
+		//double time = timer.elapsed() * 1000.0;
+		//qDebug()<<"Script end ("<<QString::number(time)<<")";
 		this->script = script;
 	}
 	catch (const char *mes)

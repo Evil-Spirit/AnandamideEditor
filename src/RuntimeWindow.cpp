@@ -67,11 +67,11 @@ void RuntimeWindow::run(Anandamide::Script *script) {
 		show();
 		message("Script start.");
 		qDebug("Script start.");
-		Timer timer;
-		timer.start();
+//		Timer timer;
+//		timer.start();
 		script->run();
-		double time = timer.elapsed() * 1000.0;
-		message(format("Script end (%.2lf ms).", time));
+//		double time = timer.elapsed() * 1000.0;
+//		message(format("Script end (%.2lf ms).", time));
 		qDebug("Script end.");
 		this->script = script;
 		

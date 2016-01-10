@@ -31,43 +31,43 @@
 
 //------------------------------------------------------------------------------
 
-class Timer {
+//class Timer {
 
-	static long long frmFrq;
-	long long 	time;
-	long long 	timePause;
+//	static long long frmFrq;
+//	long long 	time;
+//	long long 	timePause;
 
-public:
+//public:
 
-	Timer();
-	~Timer();
+//	Timer();
+//	~Timer();
 
-	void start();
-	double elapsed();
-};
+//	void start();
+//	double elapsed();
+//};
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-class FPSTimer : public Timer {
+//class FPSTimer : public Timer {
 
-	int frames;
-	double time;
+//	int frames;
+//	double time;
 
-public:
+//public:
 
-	float dt;
-	float adt;
-	float fps;
-	float afps;
+//	float dt;
+//	float adt;
+//	float fps;
+//	float afps;
 
-	FPSTimer();
+//	FPSTimer();
 
-	float finish();
+//	float finish();
 
-};
+//};
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
 #endif
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------

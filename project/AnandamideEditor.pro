@@ -6,7 +6,7 @@
 
 QT += core gui help xml opengl
 
-CONFIG+=APP
+#CONFIG+=APP
 #CONFIG+=x64
 
 win32:RC_ICONS += ../data/icons/app.ico
@@ -15,7 +15,7 @@ INCLUDEPATH += ../depend/AnandamideAPI/include
 INCLUDEPATH += ../depend/AnandamideAPI/src/Common
 INCLUDEPATH += ../include
 
-ANANDAMIDE_API_BIN = "..\\depend\\AnandamideAPI\\bin\\"
+ANANDAMIDE_API_BIN = "../depend/AnandamideAPI/bin/*.*"
 
 LIBS += -L"../depend/AnandamideAPI/lib"
 
@@ -23,37 +23,20 @@ DESTDIR += ../bin/
 
 QMAKE_CXXFLAGS += -std=c++11
 
-build_pass:CONFIG(debug, debug|release) {
-	build_pass:CONFIG(x64, x64|x32) {
-		TARGET = AnandamideEditor_x64d
-		LIBS += -lAnandamideAPI_x64d
-		LIBS += -lopengl32
-		#QMAKE_POST_LINK += $$quote(..\copy_lib_x64.bat -app)
-	} else:build_pass {
-		TARGET = AnandamideEditor_x86d
+CONFIG(debug, debug|release) {
+                TARGET = AnandamideEditor_x86d
 		LIBS += -lAnandamideAPI_x86d
-		LIBS += -lopengl32
-		#QMAKE_POST_LINK += $$quote(..\copy_lib_x32.bat -app)
-	}
-	#QMAKE_CXXFLAGS += /MP
-	message($${TARGET})
-} else:build_pass {
-	build_pass:CONFIG(x64, x64|x32) {
-		TARGET = AnandamideEditor_x64
-		LIBS += -lAnandamideAPI_x64
-		LIBS += -lopengl32
-		#QMAKE_POST_LINK += $$quote(..\copy_lib_x64.bat -app)
-	} else:build_pass {
-		TARGET = AnandamideEditor_x86
+                #LIBS += -lopengl32
+        message($${TARGET})
+} else {
+                TARGET = AnandamideEditor_x86
 		LIBS += -lAnandamideAPI_x86
-		LIBS += -lopengl32
-		#QMAKE_POST_LINK += $$quote(..\copy_lib_x32.bat -app)
-	}
-	message($${TARGET})
+                #LIBS += -lopengl32
+        message($${TARGET})
 	#QMAKE_CXXFLAGS += /Ot /Oy- /GL /MP
 }
 
-QMAKE_POST_LINK += $$QMAKE_COPY $${ANANDAMIDE_API_BIN} "..\\bin\\"
+QMAKE_POST_LINK += $$QMAKE_COPY $${ANANDAMIDE_API_BIN} "../bin/*.*"
 
 FORMS += \
     ../data/MainWindow.ui \

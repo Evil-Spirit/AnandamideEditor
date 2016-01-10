@@ -40,7 +40,7 @@
 #include "LibraryDialog.h"
 #include "TypeDialog.h"
 
-#include "treeitemclasses.h"
+#include "TreeItemClasses.h"
 
 #include "EditorWidgetsCollection.h"
 

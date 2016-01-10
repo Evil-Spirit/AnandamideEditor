@@ -48,7 +48,7 @@ namespace Anandamide {
 		emit started();
 		QCoreApplication::processEvents();
 		script->run();
-		
+
 		return true;
 	}
 

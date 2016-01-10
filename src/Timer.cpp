@@ -29,75 +29,75 @@
 
 //------------------------------------------------------------------------------
 
-#include <windows.h>
+//#include <windows.h>
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-LONGLONG	Timer::frmFrq;
+//LONGLONG	Timer::frmFrq;
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-Timer::Timer() {
-	LARGE_INTEGER frq;
-	QueryPerformanceFrequency(&frq);
-	frmFrq = frq.QuadPart;
-	start();
-}
+//Timer::Timer() {
+//	LARGE_INTEGER frq;
+//	QueryPerformanceFrequency(&frq);
+//	frmFrq = frq.QuadPart;
+//	start();
+//}
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-Timer::~Timer() { }
+//Timer::~Timer() { }
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-void Timer::start() {
-	LARGE_INTEGER start;
-	QueryPerformanceCounter(&start);
-	time = start.QuadPart;
-}
+//void Timer::start() {
+//	LARGE_INTEGER start;
+//	QueryPerformanceCounter(&start);
+//	time = start.QuadPart;
+//}
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-double Timer::elapsed() {
-	LARGE_INTEGER end;
-	QueryPerformanceCounter(&end);
-	return (double)(end.QuadPart - time) / (double)frmFrq;
-}
+//double Timer::elapsed() {
+//	LARGE_INTEGER end;
+//	QueryPerformanceCounter(&end);
+//	return (double)(end.QuadPart - time) / (double)frmFrq;
+//}
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-FPSTimer::FPSTimer() {
-	time = 0.0;
-	dt = 0.0f;
-	adt = 0.0f;
-	fps = 0.0f;
-	afps = 0.0f;
-	frames = 0;
-}
+//FPSTimer::FPSTimer() {
+//	time = 0.0;
+//	dt = 0.0f;
+//	adt = 0.0f;
+//	fps = 0.0f;
+//	afps = 0.0f;
+//	frames = 0;
+//}
 
-//------------------------------------------------------------------------------
+////------------------------------------------------------------------------------
 
-float FPSTimer::finish() {
+//float FPSTimer::finish() {
 
-	double elaps = elapsed();
-	dt = float(elaps);
+//	double elaps = elapsed();
+//	dt = float(elaps);
 
-	if (elaps > 1e-10) {
-		fps	= float(1.0 / elaps);
-	} else {
-		fps = 0.0f;
-	}
+//	if (elaps > 1e-10) {
+//		fps	= float(1.0 / elaps);
+//	} else {
+//		fps = 0.0f;
+//	}
 
-	time += elaps;
-	frames ++;
+//	time += elaps;
+//	frames ++;
 
-	if (time > 1.0) {
-		afps = float(double(frames) / time);
-		time = 0.0;
-		frames = 0;
-	}
-	adt = adt * 0.5f + dt * 0.5f;
-	return fps;
-}
+//	if (time > 1.0) {
+//		afps = float(double(frames) / time);
+//		time = 0.0;
+//		frames = 0;
+//	}
+//	adt = adt * 0.5f + dt * 0.5f;
+//	return fps;
+//}
 
 //------------------------------------------------------------------------------

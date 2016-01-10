@@ -21,10 +21,6 @@
         <file>icons/play.png</file>
         <file>icons/save_as.png</file>
         <file>icons/blocks.png</file>
-        <file>sprites/brick.png</file>
-        <file>sprites/cat.png</file>
-        <file>sprites/grass.png</file>
-        <file>sprites/cat2.png</file>
         <file>icons/minus.png</file>
         <file>icons/add_folder.png</file>
         <file>icons/folder.png</file>

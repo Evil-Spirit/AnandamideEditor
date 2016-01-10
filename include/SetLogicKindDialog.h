@@ -28,7 +28,7 @@
 #ifndef SETLOGICKINDDIALOG_H
 #define SETLOGICKINDDIALOG_H
 
-#include "treeitemclasses.h"
+#include "TreeItemClasses.h"
 #include <QDialog>
 
 namespace Ui {
