@@ -1,6 +1,17 @@
 # AnandamideEditor
 
-flow-graph script editor
+Anandamide script is flexible block diagram flow graph - based scripting language. 
+Flowchart scripting system provides flexible add-on system for your application 
+to bring simple and fast feature development with outstanding robustness. 
+The lowest understanding threshold provides low-cost developemet of the arbitary 
+logic for your application. 
+
+![Screenshot](docs/branching_blocks.png)
+
+## Video Channel
+
+https://www.youtube.com/playlist?list=PLqmaFsEpxcUUgcmjs-EN4xG8_cWeB7sG1
+
 <br>
 
 ## Building under Windows
